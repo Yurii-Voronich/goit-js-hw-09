@@ -32,3 +32,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+.back-link {
+  display: block;
+  margin-bottom: 40px;
+}
+
+/* gallery styles */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
