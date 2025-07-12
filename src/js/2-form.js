@@ -36,6 +36,7 @@ const onSubmitHandler = e => {
   } else console.log(formData);
   formEl.reset();
   localStorage.removeItem('feedback-form-state');
+  formData = { email: '', message: '' };
 };
 
 const render = e => {
