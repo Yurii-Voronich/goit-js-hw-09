@@ -12,6 +12,7 @@ let formData = {
 };
 
 const fillFields = ({ email, message }) => {
+  formData = dataFromLS;
   if (email !== '' || message !== '') {
     formEl.elements.email.value = email;
     formEl.elements.message.value = message;
