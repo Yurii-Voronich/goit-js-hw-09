@@ -5,13 +5,13 @@ try {
 } catch (err) {
   console.log(err);
 }
+
 let formData = {
   email: '',
   message: '',
 };
 
 const fillFields = ({ email, message }) => {
-  formData = dataFromLS;
   if (email !== '' || message !== '') {
     formEl.elements.email.value = email;
     formEl.elements.message.value = message;
@@ -40,6 +40,7 @@ const onSubmitHandler = e => {
 };
 
 const render = e => {
+  if (dataFromLS === null || typeof dataFromLS !== 'object') return;
   fillFields(dataFromLS);
 };
 
